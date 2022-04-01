@@ -9,7 +9,7 @@ pipeline {
         stage('Cloning the Code') {
             steps {
                 echo 'Cloning the Code from Git'
-                git branch:'main', url: 'https://github.com/nishanthkumarpathi/python-flask-app.git'
+                git branch:'main', url: 'https://github.com/Theja27/python-flask-app.git'
             }
         }
         stage('SCA using Bandit') {

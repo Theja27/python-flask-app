@@ -14,7 +14,7 @@ spec:
     spec:
       containers: # Container Details
       - name: python-flask-app-container
-        image: theja27/python-flask-app1:10
+        image: theja27/python-flask-app1:TAG
         ports:
         - containerPort: 5000
       imagePullSecrets:

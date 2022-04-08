@@ -12,6 +12,13 @@ pipeline {
                 git branch:'main', url: 'https://github.com/Theja27/python-flask-app.git'
             }
         }
+        stage('install req') {
+            steps {
+                echo 'installing'
+                sh 'pip install flake8==4.0.1'
+                sh 'pip install flake8-json==21.7.0'
+            }
+        }   
         stage('SCA using Bandit') {
             steps {
                 echo 'Scanning the Source Code using Bandit'

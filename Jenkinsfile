@@ -21,7 +21,7 @@ pipeline {
         stage('flake 8') {
             steps {
                 echo 'Scanning flake8'
-                sh 'flake8 . --format=json --output-file test.json | exit-zero'
+                sh 'flake8 . --format=json --output-file test.json --exit-zero'
             }
         }    
         stage('Build Docker Image') {
